@@ -1,6 +1,6 @@
 #
 
-require "rubygems"
+#require "rubygems"
 require "twitter"
 require "date"
 
@@ -12,6 +12,6 @@ require "date"
 end
 
 day = Date.today.day
-if day == 5 or day == 15 or day == 25
+#if day == 5 or day == 15 or day == 25
   @twitter.update("今日はホットケーキ サービスデーです！！")
-end
+#end
