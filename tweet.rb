@@ -1,6 +1,8 @@
-#
 require "twitter"
-#require "date"
+
+def marks(day)
+  "！" * (day.div(10) +1)
+end
 
 @twitter = Twitter::REST::Client.new do |config|
   config.consumer_key    = ENV['TWITTER_CONSUMER_KEY']
@@ -10,6 +12,6 @@ require "twitter"
 end
 
 day = Date.today.day
-#if day == 5 or day == 15 or day == 25
-  @twitter.update("今日はホットケーキ サービスデーです！！")
-#end
+if day == 5 or day == 15 or day == 25
+  @twitter.update("今日はホットケーキ サービスデーです" + marks(day))
+end
