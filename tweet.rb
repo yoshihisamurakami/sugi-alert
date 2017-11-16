@@ -1,5 +1,5 @@
 #
-#require "twitter"
+require "twitter"
 #require "date"
 
 @twitter = Twitter::REST::Client.new do |config|
