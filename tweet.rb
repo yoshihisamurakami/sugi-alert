@@ -13,5 +13,5 @@ end
 
 day = Date.today.day
 if day == 5 or day == 15 or day == 25
-  @twitter.update("今日はホットケーキ サービスデーです" + marks(day))
+  @twitter.update("今日はホットケーキ サービスデーです" + marks(day) + " #八幡山 #ルポーゼすぎ")
 end
